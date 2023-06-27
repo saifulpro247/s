@@ -902,7 +902,7 @@ button.news_like.active svg {
   .answer_by_gpt {
     display: flex;
     gap: 20px;
-    background: #ddd;
+    background: #c1c1c136;
     padding: 10px 0;
     margin: 20px 0;
   }
