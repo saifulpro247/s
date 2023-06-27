@@ -67,31 +67,115 @@
 		</div>
 	</div>
 
-	<section class="registration">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="col-lg-8 ">
-						<div class="register_form">
-							<h4>Registration Form</h4>
-							<form action="#">
-								<label for="text">Enter your Name</label>
-								<input type="text" name="text" placeholder="Enter your Name">
-								<label for="email">Enter your Email</label>
-								<input type="email" name="email" placeholder="Enter your Email">
-								<label for="password">Enter your password</label>
-								<input type="password" name="password" placeholder="Enter your password">
-								<label for="password">Re-enter your password</label>
-								<input type="password" name="password" placeholder="Re-enter your password">
-								<button type="submit">Register Now</button>
-								<p>Have an account <a href="#">Login now</a></p>
-							</form>
+	<main id="content" class="main-content">
+		<div class="container search-container py-4">
+			<div class="row">
+				<div class="col-md-6">
+					<form method="POST" action="https://googleearch.insomniacafe.org/preferencesPOST" data-ajax-form="true">
+	
+						<input type="hidden" name="csrf_token" value="307f6912e068be9d28d171b37f9d8b9503bbc7b4">
+	
+						<label class="form-label mb-3" for="darkmode">Dark Mode</label>
+						<div class="form-group">
+							<div class="pl-3">
+								<div class="custom-control custom-switch">
+									<input type="hidden" name="darkmode" value="0">
+									<label class="switch">
+										<input type="checkbox" checked="" id="darkmode" name="darkmode">
+										<span class="slider round"></span>
+									</label>
+									<label class="custom-control-label" for="darkmode" name="darkmode">Enable Dark
+										Mode</label>
+								</div>
+							</div>
 						</div>
-					</div>
+	
+	
+						<label class="form-label mb-3" for="backgrounds">Show Backgrounds</label>
+						<div class="form-group">
+							<div class="pl-3">
+								<div class="custom-control custom-switch">
+									<input type="hidden" name="backgrounds" value="0">
+									<label class="switch">
+										<input type="checkbox" checked="" id="backgrounds" name="bg">
+										<span class="slider round"></span>
+									</label>
+									<label class="custom-control-label" for="backgrounds" name="backgrounds">Show background
+										wallpaper in homepage</label>
+								</div>
+							</div>
+						</div>
+	
+						<label class="form-label mb-3" for="new_window">Where results open</label>
+						<div class="form-group">
+							<div class="pl-3">
+								<div class="custom-control custom-switch">
+									<input type="hidden" name="new_window" value="0">
+									<label class="switch">
+										<input type="checkbox" checked="" id="darkmode" name="new_window">
+										<span class="slider round"></span>
+									</label>
+									<label class="custom-control-label" for="new_window" name="new_window">Open each
+										selected result in a new browser window.</label>
+								</div>
+							</div>
+						</div>
+						<label class="form-label mb-3" for="search_autocomplete">Search autocomplete</label>
+						<div class="form-group">
+							<div class="pl-3">
+								<div class="custom-control custom-switch">
+									<input type="hidden" name="search_autocomplete" value="0">
+									<label class="switch">
+										<input type="checkbox" checked="" id="search" name="search">
+										<span class="slider round"></span>
+									</label>
+									<label class="custom-control-label" for="search_autocomplete"
+										name="search_autocomplete">Show suggestions as you type</label>
+								</div>
+							</div>
+						</div>
+	
+						<label class="form-label mb-3">SafeSearch Filters</label>
+						<div class="form-group">
+							<div class="custom-control custom-radio">
+								<input type="radio" id="safesearch-off" name="safesearch" class="custom-control-input"
+									value="off" checked='checked'>
+								<label class="custom-control-label d-block" for="safesearch-off">Off</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="safesearch-moderate" name="safesearch" class="custom-control-input"
+									value="moderate">
+								<label class="custom-control-label d-block" for="safesearch-moderate">Moderate</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="safesearch-strict" name="safesearch" class="custom-control-input"
+									value="strict">
+								<label class="custom-control-label d-block" for="safesearch-strict">Strict</label>
+							</div>
+	
+						</div>
+	
+						<div class="form-group">
+							<label class="form-label" for="language">Language</label>
+							<select class="custom-select" name="language" id="language">
+								<option value="ar">
+									Arabic </option>
+								<option value="en_US" selected>
+									English (US) </option>
+							</select>
+						</div>
+	
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary">
+								<span class="btn-text">Save Settings</span>
+							</button>
+						</div>
+	
+					</form>
 				</div>
 			</div>
-			
-	</section>
-
+		</div>
+	</main>
 	<!-- footer area -->
 	<div class="footer_area">
 		<div class="container-fluid">
