@@ -750,6 +750,88 @@ button.news_like.active svg {
 }
 
 /* chat box */
+.site_left_offcanvase {
+	width: 280px;
+	background: #fff;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	padding: 5px 10px;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.site_left_offcanvase.active{
+    opacity: 1;
+    visibility: visible;
+}
+.menu_item .new_chat {
+	padding: 10px 50px 10px 10px;
+	border: 1px solid #333;
+	display: inline-block;
+	border-radius: 10px;
+	font-size: 16px;
+	color: var(--text-color);
+}
+.menu_item .show_hide {
+	padding: 10px 20px;
+	border: 1px solid #333;
+	border-radius: 10px;
+}
+.chat_content_box.active {
+	padding-left: 150px;
+}
+
+.offcanvase_button {
+	position: absolute;
+	left: 10px;
+	width: 50px;
+	height: 30px;
+	top: 20px;
+	padding: 0 10px;
+	border: 1px solid #333;
+	border-radius: 10px;
+}
+  .site_left_offcanvase ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .site_left_offcanvase li a {
+    display: block;
+    padding: 10px;
+    color: var(--text-color);
+  }
+  .site_left_offcanvase .list-item {
+    scroll-behavior: smooth;
+  }
+
+.chat_list {
+	margin-top: 20px;
+}
+
+.user_profile_img {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .user_profile_img img {
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+  }
+  .user_profile_img a {
+    color: var(--text-color);
+  }
+
+
+
+
+
 .chat_content {
 	margin-bottom: 80px;
     margin-top: 80px;
@@ -797,6 +879,63 @@ button.news_like.active svg {
     top: 15px;
     padding: 2px 10px;
   }
+  #chat_box {
+	padding: 15px 60px 0 15px;
+}
+  
+.chat_text_box button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    padding: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .single_chat_prompt {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .answer_by_gpt {
+    display: flex;
+    gap: 20px;
+    background: #ddd;
+    padding: 10px 0;
+    margin: 20px 0;
+  }
+  .single_chat_prompt img {
+    width: 48px;
+    width: 48px;
+  }
+  .answer_by_gpt img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .chat_areas .footer_area {
+	position: fixed;
+	width: 100%;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* weather css */
 .weather_update {
@@ -1587,10 +1726,11 @@ a.load_more_btn {
     display: block;
   }
   .video_info .video_title {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 15px;
     display: block;
     margin-top: 10px;
+    color: var(--link-color);
   }
   .video_thumb {
     position: relative;
@@ -1635,13 +1775,14 @@ a.load_more_btn {
     display: flex;
     gap: 10px;
     align-items: center;
-    color: var(--text-color);
+    color: var(--dark-gray);
+    font-size: 16px;
   }
   .search_site {
     margin-bottom: 15px;
   }
   .single_news .news_title {
-	font-size: 30px;
+	font-size: 20px;
 	margin: 15px 0;
 	display: block;
 }

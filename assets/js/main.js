@@ -1,6 +1,19 @@
 (function($) {
     "use strict";
 
+    $(document).ready(function(){
+
+      $('.show_hide').click(function(){
+        $('.site_left_offcanvase').toggleClass('active');
+        $('.chat_content_box').toggleClass('active');
+      });
+      
+      $('.offcanvase_button').click(function(){
+        $('.site_left_offcanvase').addClass('active');
+        $('.chat_content_box').addClass('active');
+      })
+
+    })
 
    
 
@@ -34,6 +47,7 @@
       user.classList.remove('active');
       settings.classList.remove('active');
     });
+
 
    
     // $('.more_item').click(function(e){

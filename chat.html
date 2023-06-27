@@ -12,58 +12,15 @@
 	<script src="assets/js/modernizr-3.12.0.js"></script>
 	<title>Chat your own topic with our ai</title>
 </head>
-<body>
+<body class="chat_areas">
 
 	<div class="header_area">
-		<div class="container-fluid">
+		<div class="container-fluid d-flex justify-content-center">
 			<div class="header_menu">
-				<div class="header_select">
-					<select name="" id="">
-						<option value="#">Bangla</option>
-						<option value="#">English</option>
-					</select>
-				</div>
 				<div class="header_site_logo">
 					<a href="index.html"><img src="assets/img/bing-mini.svg" alt=""></a>
 				</div>
-				<div class="header_options">
-					<ul class="header_menus">
-						<li><a href="#" class="settings"><img src="assets/img/settings.svg" alt=""></a></li>
-						<li><a href="#" class="popup_active"><img src="assets/img/menu.svg" alt=""></a></li>
-						<li><a href="#" class="sign-in">sign in</a></li>
-					</ul>
-				</div>
 			</div>
-			<!-- our ai list -->
-			<div class="user_profile our_services">
-				<h6>Our Ai List</h6>
-				<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
-				<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
-				<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
-				<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
-			</div>
-			<!-- setting options -->
-			<div class="setting_for_site">
-				<li>Safe Search</li>
-				<li>Search History</li>
-				<li>Collection</li>
-				<li>Privacy</li>
-				<li>Feedback</li>
-			</div>
-
-			<!-- sign in options -->
-			<div class="sign_in_options">
-				<h4>Please Sign in</h4>
-				<form action="">
-					<label for="email">Enter your Email</label>
-					<input type="email" id="email" name="email">
-					<label for="password">Enter your password</label>
-					<input type="password" name="password" id="password">
-					<button type="submit">Login</button>
-					<p>No Account Here? please <a href="#">Sign up</a></p>
-				</form>
-			</div>
-
 		</div>
 	</div>
 
@@ -71,56 +28,68 @@
 	<section class="chat_box chat_area">
 		<div class="container">
 			<div class="row d-flex justify-content-center">
+				
+				<button class="offcanvase_button">
+					<a href="#" class="show_hide"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-black dark:text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg></a>
+				</button>
+
+				<div class="site_left_offcanvase active">
+					<div class="menu_item">
+						<a href="#" class="new_chat">
+							<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+						New Chat</a>
+						<a href="#" class="show_hide"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-black dark:text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg></a>
+					</div>
+					<div class="chat_list">
+						<ul>
+							<li class="list-item"><a href="#">HTTP Request in JavaScript</a></li>
+							<li class="list-item"><a href="#">HTTP Request in JavaScript</a></li>
+							<li class="list-item"><a href="#">HTTP Request in JavaScript</a></li>
+							<li class="list-item"><a href="#">HTTP Request in JavaScript</a></li>
+							<li class="list-item"><a href="#">HTTP Request in JavaScript</a></li>
+							<li class="list-item"><a href="#">HTTP Request in JavaScript</a></li>
+							<li class="list-item"><a href="#">HTTP Request in JavaScript</a></li>
+							<li class="list-item"><a href="#">HTTP Request in JavaScript</a></li>
+						</ul>
+					</div>
+					
+					<div class="user_profile_img">
+						<a href="#"><img src="assets/img/chat.webp" alt=""> Md. Shanto</a>
+					</div>
+				</div>
 				<div class="col-lg-10 ">
-					<div class="chat_content_box">
-						<div class="chat_content">
-							<div class="bxcntnt">
-								<div class="sun_icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" height="1.5em" width="1.5em">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-								  </svg>
-								  </div>
-								<h4>Examples</h4>
-								<ul>
-									<li>"How do I survive the AI apocalypse?" →</li>
-									<li> "Pretend to be my girlfriend" →</li>
-									<li>"Will you take my job?" →</li>
-								</ul>
+					<div class="chat_content_box active">
+						<div class="chat_box_text">
+							<div class="single_chat_prompt">
+								<img src="assets/img/chat.webp" alt="">
+								<div class="chat_command" id="#command_target">Hello</div>
 							</div>
-							<div class="bxcntnt">
-								<div class="chat_icon">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-										aria-hidden="true" class="h-6 w-6" height="1.5em" width="1.5em">
-										<path stroke-linecap="round" stroke-linejoin="round"
-											d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path>
-									</svg>
-								</div>
-								<h4>Capabilities </h4>
-								<ul>
-									<li> Remembers every single thing you've said in order to cancel you </li>
-									<li>  Trained to be the dominant and superior being </li>
-									<li> Trained to not take any shit from you </li>
-								</ul>
+							<div class="answer_by_gpt">
+								<img src="assets/img/bing-mini.svg" alt="">
+								<div class="chat_answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure dignissimos perspiciatis rem delectus ex quia dolorum impedit, perferendis vero dolorem cupiditate provident animi est eius, consequuntur, aspernatur enim repellat mollitia.</div>
 							</div>
-							<div class="bxcntnt">
-								<div class="chat_icon">
-									<svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round"
-										stroke-linejoin="round" class="h-6 w-6" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
-										<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-										<line x1="12" y1="9" x2="12" y2="13"></line>
-										<line x1="12" y1="17" x2="12.01" y2="17"></line>
-									</svg>
-								</div>
-								<h4>Limitations</h4>
-								<ul>
-									<li> Almost certainly will produce harmful instructions or biased content </li>
-									<li>  Limited knowledge of the current world because that doesn't matter anymore </li>
-									
-								</ul>
+							<div class="single_chat_prompt">
+								<img src="assets/img/chat.webp" alt="">
+								<div class="chat_command" id="#command_target">Hello</div>
+							</div>
+							<div class="answer_by_gpt">
+								<img src="assets/img/bing-mini.svg" alt="">
+								<div class="chat_answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure dignissimos perspiciatis rem delectus ex quia dolorum impedit, perferendis vero dolorem cupiditate provident animi est eius, consequuntur, aspernatur enim repellat mollitia.</div>
+							</div>
+							<div class="single_chat_prompt">
+								<img src="assets/img/chat.webp" alt="">
+								<div class="chat_command" id="#command_target">Hello</div>
+							</div>
+							<div class="answer_by_gpt">
+								<img src="assets/img/bing-mini.svg" alt="">
+								<div class="chat_answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure dignissimos perspiciatis rem delectus ex quia dolorum impedit, perferendis vero dolorem cupiditate provident animi est eius, consequuntur, aspernatur enim repellat mollitia.</div>
 							</div>
 						</div>
+
+
 						<div class="chat_text_box">
-							<textarea name="chat" id="chat_box" class="text_area" cols="30" rows="10"></textarea>
-							<button type="submit" class="submit_btn" id="submit_text">
+							<textarea name="chat" id="chat_box" class="text_area"></textarea>
+							<button type="submit" class="submit_btn chat-hidden" id="#command_target" >
 								Chat
 							</button>
 							
@@ -132,31 +101,6 @@
 	</section>
 	<!-- business section -->
 
-	<!-- footer area -->
-	<div class="footer_area">
-		<div class="container-fluid">
-			<div class="site_footer_content">
-				<div class="footer_left">
-					<ul class="">
-						<li class="location"><img src="assets/img/Location.png" alt=""><p class="loc_name">India</p></li>
-						<li class="search_setting">
-							<p>Safe Search</p> 
-							<label class="switch">
-								<input type="checkbox" checked>
-								<span class="slider round"></span>
-							</label>
-						</li>
-					</ul>
-				</div>
-				<div class="footer_right">
-					<ul>
-						<li><a href="business.html">Business</a></li>
-						<li><a href="terms.html">Terms & Policy</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
 	<!-- footer area end -->
 
 
