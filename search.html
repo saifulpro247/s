@@ -32,13 +32,119 @@
 			<div class="mobile_search_box main_search_box">
 				<form action="search.html" method="post" class="site_main_search">
 					<div class="search_box">
-						<button type="submit" class="search_submit" title="Search"><img src="assets/img/bing-mini.svg" alt=""></button>
-						<input type="text" name="search" title="Search anything or type any URL" placeholder="Search anything" class="search_prompt">
-						<button id="voice_search" class="voice_prompt" title="Search your voice" name="voice"><img src="assets/img/Keyboard voice.svg" alt=""></button>
-						<button id="img_search" class="img_prompt" title="Search by uploading image" name="img-upload"><img src="assets/img/Camera.svg" alt=""></button>
+						<button type="submit" class="search_submit" title="Search"><img src="assets/img/bing-mini.svg"
+								alt=""></button>
+						<input type="text" name="search" title="Search anything or type any URL"
+							placeholder="Search anything" class="search_prompt">
+						<button id="voice_search" class="voice_prompt" title="Search your voice" name="voice"><img
+								src="assets/img/Keyboard voice.svg" alt=""></button>
+						<button id="img_search" class="img_prompt" title="Search by uploading image" name="img-upload"><img
+								src="assets/img/Camera.svg" alt=""></button>
 					</div>
 				</form>
 			</div>
+			<!-- our ai list -->
+			<div class="user_profile our_services">
+				<h6>Our Ai List</h6>
+				<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
+				<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
+				<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
+				<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
+			</div>
+			<!-- setting options -->
+			<div class="setting_for_site">
+				<li>Safe Search</li>
+				<li>Search History</li>
+				<li>Collection</li>
+				<li>Privacy</li>
+				<li>Feedback</li>
+			</div>
+			<!-- sign in options -->
+			<div class="sign_in_options">
+				<h4>Please Sign in</h4>
+				<form action="">
+					<label for="email">Enter your Email</label>
+					<input type="email" id="email" name="email">
+					<label for="password">Enter your password</label>
+					<input type="password" name="password" id="password">
+					<button type="submit">Login</button>
+					<p>No Account Here? please <a href="registration.html">Sign up</a></p>
+				</form>
+			</div>
+		</div>
+		<!-- mobile version -->
+		<div class="container-fluid">
+			<div class="header_menu header_search d-none d-sm-flex">
+				<div class="header_search_box">
+					<img src="assets/img/bing-mini.svg" alt="">
+					<form action="search.html" method="post" class="search_page_search">
+						<input type="search" name="search" id="">
+						<button class="clear_text" type="reset"><img src="assets/img/cross.png" alt=""></button>
+						<button class="voice_search" type="mic"><img src="assets/img/Keyboard voice.svg" alt=""></button>
+						<button class="image_upload" type="file"><img src="assets/img/Camera.svg" alt=""></button>
+						<button class="search_btn" type="submit" id="submit_btn"><img src="assets/img/Search.png"
+								alt=""></button>
+					</form>
+				</div>
+				<div class="header_options">
+					<ul class="header_menus">
+						<li><a href="#" class="settings"><img src="assets/img/settings.svg" alt=""></a></li>
+						<li><a href="#" class="popup_active"><img src="assets/img/menu.svg" alt=""></a></li>
+						<li><a href="#" class="sign-in">sign in</a></li>
+					</ul>
+				</div>
+			</div>
+	
+			<div class="search_types">
+				<ul class="search_types_selector nav nav-tabs" id="myTab" role="tablist">
+					<li class="single_search_item nav-item">
+						<a href="#" class="nav-link active" data-bs-toggle="tab" data-bs-target="#all"
+							aria-selected="true"><img src="assets/img/Location.svg" alt="">
+							<p>All</p>
+						</a>
+					</li>
+					<li class="single_search_item nav-item">
+						<a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#image" aria-selected="false">
+							<img src="assets/img/Image 2.svg" alt="">
+							<p>Image</p>
+						</a>
+					</li>
+					<li class="single_search_item nav-item">
+						<a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#video" aria-selected="false">
+							<img src="assets/img/Video.svg" alt="">
+							<p>Video</p>
+						</a>
+					</li>
+					<li class="single_search_item nav-item">
+						<a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#news" aria-selected="false">
+							<img src="assets/img/Document.svg" alt="">
+							<p>News</p>
+						</a>
+					</li>
+					<li class="single_search_item nav-item">
+						<a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#map" aria-selected="false">
+							<img src="assets/img/Location.svg" alt="">
+							<p>Maps</p>
+						</a>
+					</li>
+					<li class="single_search_item nav-item more_item">
+						<a href="#">
+							<img src="assets/img/Group 12.svg" alt="">
+							<p>More</p>
+						</a>
+						<ul class="sub_item d-none">
+							<li><a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#news"
+									aria-selected="false">News</a></li>
+							<li><a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#"
+									aria-selected="false">Flights</a></li>
+							<li><a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#"
+									aria-selected="false">Hotels</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- mobile popup -->
 		<!-- our ai list -->
 		<div class="user_profile our_services">
 			<h6>Our Ai List</h6>
@@ -67,102 +173,7 @@
 				<p>No Account Here? please <a href="#">Sign up</a></p>
 			</form>
 		</div>
-		</div>
-		<!-- mobile version -->
-		<div class="container-fluid">
-			<div class="header_menu header_search d-none d-sm-flex">
-				<div class="header_search_box">
-					<img src="assets/img/bing-mini.svg" alt="">
-					<form action="search.html" method="post" class="search_page_search">
-						<input type="search" name="search" id="">
-						<button class="clear_text" type="reset"><img src="assets/img/cross.png" alt=""></button>
-						<button class="voice_search" type="mic"><img src="assets/img/Keyboard voice.svg"
-								alt=""></button>
-						<button class="image_upload" type="file"><img src="assets/img/Camera.svg" alt=""></button>
-						<button class="search_btn" type="submit" id="submit_btn"><img src="assets/img/Search.png"
-								alt=""></button>
-					</form>
-				</div>
-				<div class="header_options">
-					<ul class="header_menus">
-						<li><a href="#" class="settings"><img src="assets/img/settings.svg" alt=""></a></li>
-						<li><a href="#" class="popup_active"><img src="assets/img/menu.svg" alt=""></a></li>
-						<li><a href="#" class="sign-in">sign in</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="search_types">
-				<ul class="search_types_selector nav nav-tabs" id="myTab" role="tablist">
-					<li class="single_search_item nav-item">
-						<a href="#" class="nav-link active" data-bs-toggle="tab" data-bs-target="#all" aria-selected="true"><img src="assets/img/Location.svg" alt="">
-							<p>All</p>
-						</a>
-					</li>
-					<li class="single_search_item nav-item">
-						<a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#image" aria-selected="false">
-						<img src="assets/img/Image 2.svg" alt="">
-							<p>Image</p>
-						</a></li>
-					<li class="single_search_item nav-item">
-						<a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#video" aria-selected="false">
-						<img src="assets/img/Video.svg" alt="">
-							<p>Video</p>
-						</a></li>
-					<li class="single_search_item nav-item">
-						<a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#news" aria-selected="false">
-						<img src="assets/img/Document.svg" alt="">
-							<p>News</p>
-						</a></li>
-					<li class="single_search_item nav-item">
-						<a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#map" aria-selected="false">
-						<img src="assets/img/Location.svg" alt="">
-							<p>Maps</p>
-						</a></li>
-					<li class="single_search_item nav-item more_item">
-						<a href="#">
-							<img src="assets/img/Group 12.svg" alt="">
-							<p>More</p>
-						</a>
-						<ul class="sub_item d-none">
-							<li><a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#news" aria-selected="false">News</a></li>
-							<li><a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#" aria-selected="false">Flights</a></li>
-							<li><a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#" aria-selected="false">Hotels</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- mobile popup -->
-				<!-- our ai list -->
-				<div class="user_profile our_services">
-					<h6>Our Ai List</h6>
-					<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
-					<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
-					<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
-					<li><a href="chat.html"><img src="assets/img/bing-mini.svg" alt="">Bing Ai</a></li>
-				</div>
-				<!-- setting options -->
-				<div class="setting_for_site">
-					<li>Safe Search</li>
-					<li>Search History</li>
-					<li>Collection</li>
-					<li>Privacy</li>
-					<li>Feedback</li>
-				</div>
-				<!-- sign in options -->
-				<div class="sign_in_options">
-					<h4>Please Sign in</h4>
-					<form action="">
-						<label for="email">Enter your Email</label>
-						<input type="email" id="email" name="email">
-						<label for="password">Enter your password</label>
-						<input type="password" name="password" id="password">
-						<button type="submit">Login</button>
-						<p>No Account Here? please <a href="#">Sign up</a></p>
-					</form>
-				</div>
-			</div>
+	</div>
 			
 
 	
